@@ -89,7 +89,7 @@ const App = {
       <div class="card">
         <div class="card-title">Dinero disponible</div>
         <div class="saldo-grande ${saldoClass}">${this.fmt(r.saldoDisponible)}</div>
-        <div class="text-muted mt-8">Solo contabilidad · Sin dinero real</div>
+        <div class="text-muted mt-8"></div>
       </div>
       <div class="grid-2" style="margin:0 16px;">
         <div class="stat"><div class="label">Ganancias remesas</div><div class="value amount-pos">${this.fmt(r.gananciasRemesas)}</div></div>
