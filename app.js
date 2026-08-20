@@ -269,7 +269,7 @@ const App = {
           <strong>FAURE Finanzas</strong><br>
           Director y Productor: Jorge FAURE<br>
           Desarrollo: Oscar Antonio Alvarez Collado<br>
-          Versión 1.4 · Solo contabilidad simulada · 100% offline
+          Versión 1.4 · 100% offline
         </p>
       </div>`;
   },
