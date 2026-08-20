@@ -1,0 +1,14 @@
+{
+  "name": "faure-finanzas",
+  "version": "1.0.0",
+  "description": "FAURE Finanzas - Aplicación de contabilidad para control de remesas, ingresos, gastos y metas. Solo contabilidad simulada, sin dinero real.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve .",
+    "web": "npx serve ."
+  },
+  "keywords": ["finanzas", "contabilidad", "remesas", "offline"],
+  "author": "FAURE",
+  "license": "MIT",
+  "dependencies": {}
+}
