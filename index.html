@@ -3,31 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <meta name="theme-color" content="#0f766e" id="meta-theme-color" />
-  <meta name="description" content="FAURE Finanzas - Contabilidad de remesas. 100% offline." />
+  <meta name="theme-color" content="#050c1e" />
+  <meta name="description" content="FAURE Finanzas - Contabilidad. Solo simulación. 100% offline." />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="mobile-web-app-capable" content="yes" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" type="image/png" sizes="192x192" href="icons/192.png" />
-  <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
-  <link rel="apple-touch-icon" href="icons/192.png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch.png" />
   <title>FAURE Finanzas</title>
   <link rel="stylesheet" href="app.css" />
 </head>
 <body>
   <div id="splash" class="splash">
     <div class="splash-content">
-      <div class="splash-logo" id="splash-logo"></div>
-      <h1 class="splash-title">FAURE Finanzas</h1>
-      <p class="splash-sub">Contabilidad</p>
+      <div class="splash-logo">
+        <img src="icons/192.png" alt="FAURE" width="120" height="120" />
+      </div>
+      <h1 class="splash-title">FAURE FINANZAS</h1>
+      <p class="splash-sub">Controla · Ahorra · Crece</p>
       <p class="splash-version">Versión 1.4</p>
       <div class="splash-credits">
-        <div class="credit-block">
+        <div>
           <span class="credit-role">Director y Productor</span>
           <span class="credit-name">Jorge FAURE</span>
         </div>
-        <div class="credit-block">
+        <div>
           <span class="credit-role">Desarrollo y Programación</span>
           <span class="credit-name">Oscar Antonio Alvarez Collado</span>
         </div>
@@ -38,31 +39,10 @@
 
   <div id="app" class="hidden"></div>
 
-  <script src="app/models/Remesa.js"></script>
-  <script src="app/models/Ingreso.js"></script>
-  <script src="app/models/Gasto.js"></script>
-  <script src="app/models/Retiro.js"></script>
-  <script src="app/models/Meta.js"></script>
-  <script src="app/database/BaseDatos.js"></script>
-  <script src="app/database/OperacionesDB.js"></script>
-  <script src="app/database/ConfiguracionDB.js"></script>
-  <script src="app/services/CalculadoraFinanciera.js"></script>
-  <script src="app/services/Respaldo.js"></script>
-  <script src="app/services/Notificaciones.js"></script>
-  <script src="app/reports/ReportesDiarios.js"></script>
-  <script src="app/reports/ReportesMensuales.js"></script>
-  <script src="app/reports/ReportesAnuales.js"></script>
-  <script src="app/settings/PorcentajesAhorro.js"></script>
-  <script src="app/settings/Monedas.js"></script>
-  <script src="app/settings/ConfiguracionNegocio.js"></script>
-  <script src="app/settings/Tema.js"></script>
-  <script src="icons/icons.js"></script>
   <script src="app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(() => {});
-      });
+      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
     }
   </script>
 </body>

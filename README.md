@@ -1,38 +1,38 @@
-# FAURE Finanzas
+# FAURE Finanzas v1.4
 
-Contabilidad de remesas, ingresos, gastos y metas.  
-**100% offline.** Sin cuentas, sin login, sin admin, sin APIs externas.
+Contabilidad simulada · 100% offline · Sin cuentas
 
-> Solo contabilidad simulada. No hay dinero real.
+**Director y Productor:** Jorge FAURE  
+**Desarrollo:** Oscar Antonio Alvarez Collado
 
-## Créditos
+## Estructura
 
-| Rol | Nombre |
-|-----|--------|
-| Director y Productor | Jorge FAURE |
-| Desarrollo y Programación | Oscar Antonio Alvarez Collado |
+```
+FAURE_FINANZAS/
+├── index.html
+├── app.js          ← toda la lógica
+├── app.css         ← todos los estilos
+├── manifest.json
+├── sw.js
+├── README.md
+└── icons/
+    ├── 192.png
+    ├── 512.png
+    ├── apple-touch.png
+    └── favicon.png
+```
 
-## Qué incluye
+## Funciones
 
-- Pantalla de carga con créditos
-- Inicio / resumen
-- Finanzas (ingresos, gastos, retiros)
-- Nueva remesa
-- Metas de ahorro
-- Historial y reportes
-- Tema sistema / claro / oscuro + color de acento
-- Respaldo y restauración (JSON)
-- PWA + Service Worker offline
-- Iconos SVG
+- Resumen, ingresos, gastos, retiros, remesas
+- Metas con foto de portada importada
+- Distribución automática de ganancias por %
+- Tema oscuro (logo) / claro
+- Respaldo JSON
+- PWA offline
 
 ## Uso
 
 ```bash
 npx serve .
 ```
-
-O abre `index.html` en el navegador. No hay inicio de sesión: entra directo al resumen.
-
-## APK (PWA / TWA)
-
-Usa PWA Builder, Bubblewrap o Capacitor a partir de esta carpeta.
